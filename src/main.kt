@@ -8,12 +8,13 @@ fun main() {
     val album = Album(songs)
     val single = Single(songs[0], songs[1])
 
+    val recordPlayer = RecordPlayer()
+
     println("Album")
-    println(album.getAllSongs())
-    println(album.getPlayingTime())
+    recordPlayer.play(album)
 
     println("Single")
-    println(single.getAllSongs())
-    println(single.getPlayingTime())
+    recordPlayer.play(single)
+
 
 }
